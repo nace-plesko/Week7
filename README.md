@@ -2,7 +2,7 @@
 
 Time spent: **15** hours spent in total
 
-> Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
+> Objective: Find, analyze, recreate, and document ** up to five vulnerabilities** affecting an old version of WordPress
 
 ## Pentesting Report
 
@@ -19,7 +19,7 @@ Time spent: **15** hours spent in total
 [embed src='https://youtube.com/embed/12345\x3csvg onload=alert(1)\x3e'][/embed]
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-includes/class-wp-embed.php)
-1. (Required) Authenticated Cross-Site Scripting (XSS) via Media File Metadata
+2. (Required) Authenticated Cross-Site Scripting (XSS) via Media File Metadata
   - [ ] Summary: allows authenticated user to inject HTML via incorrectly handled file track information
     - Vulnerability types: stored cross site scripting
     - Tested in version: 4.2
@@ -31,7 +31,7 @@ Time spent: **15** hours spent in total
   - [ ] Steps to recreate: wpscan to find the vulnerability, edit metadata of mp3 file with Groove, put in any field <script>alert('nacewashere');</script> and upload this mp3 file to wp 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/branches/4.2/src/wp-includes/media.php)
-1. (Required) Nav Menu Title Cross-Site Scripting (XSS)
+3. (Required) Nav Menu Title Cross-Site Scripting (XSS)
   - [ ] Summary: allows authenticated user to inject HTML via a title field.
     - Vulnerability types: stored cross site scripting
     - Tested in version:4.2
